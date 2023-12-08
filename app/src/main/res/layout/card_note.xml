@@ -12,25 +12,27 @@
         android:id="@+id/cardNoteBottom"
         android:layout_width="fill_parent"
         android:layout_height="100dp"
-        android:src="@tools:sample/avatars"
+        android:contentDescription="@string/bottom_corner_rectangle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardNoteTop"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/bottom_corner_rectangle" />
 
     <ImageView
         android:id="@+id/cardNoteTop"
         android:layout_width="fill_parent"
         android:layout_height="35dp"
+        android:contentDescription="@string/top_corner_blue_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/top_corner_blue_rectangle" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         app:layout_constraintBottom_toTopOf="@+id/cardNoteBottom"
@@ -42,25 +44,42 @@
             android:id="@+id/iconeImageMatiere"
             android:layout_width="57dp"
             android:layout_height="24dp"
+            android:contentDescription="@string/royaume"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/titleCardMatiere"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/royaume" />
+            app:srcCompat="@drawable/royaume"
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:id="@+id/titleCardMatiere"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="87dp"
-            android:text="Anglais LVA"
+            android:text="@string/anglais_lva"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/iconeImageMatiere"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/bts_blanc"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardNoteBottom" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

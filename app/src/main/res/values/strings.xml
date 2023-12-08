@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AppProj3Notes</string>
+    <string name="royaume">royaume</string>
+    <string name="top_corner_blue_rectangle">top_corner_blue_rectangle</string>
+    <string name="bottom_corner_rectangle">bottom_corner_rectangle</string>
+    <string name="bts_blanc">BTS Blanc</string>
+    <string name="anglais_lva">Anglais LVA</string>
 </resources>
