@@ -41,19 +41,19 @@
         app:layout_constraintTop_toTopOf="@+id/cardNoteTop">
 
         <ImageView
-            android:id="@+id/iconeImageMatiere"
+            android:id="@+id/iconImageSubject"
             android:layout_width="57dp"
             android:layout_height="24dp"
             android:contentDescription="@string/royaume"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/titleCardMatiere"
+            app:layout_constraintEnd_toStartOf="@+id/titleCardSubject"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/royaume"
             tools:ignore="ImageContrastCheck" />
 
         <TextView
-            android:id="@+id/titleCardMatiere"
+            android:id="@+id/titleCardSubject"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="87dp"
@@ -63,14 +63,14 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/iconeImageMatiere"
+            app:layout_constraintStart_toEndOf="@+id/iconImageSubject"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/titleNote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -81,5 +81,48 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/cardNoteBottom" />
+
+    <TextView
+        android:id="@+id/resultNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="195dp"
+        android:text="@string/resultNote"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardNoteBottom"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dateNote"
+        app:layout_constraintTop_toBottomOf="@+id/dateNote" />
+
+    <TextView
+        android:id="@+id/dateNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="149dp"
+        android:text="@string/dateNote"
+        android:textAlignment="viewStart"
+        android:textColor="#616161"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardNoteBottom"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titleNote"
+        app:layout_constraintTop_toBottomOf="@+id/titleNote" />
+
+    <TextView
+        android:id="@+id/resultExpectedNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="@string/resultExpectedNote"
+        android:textAlignment="viewStart"
+        android:textColor="#616161"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/resultNote"
+        app:layout_constraintStart_toEndOf="@+id/resultNote"
+        app:layout_constraintTop_toTopOf="@+id/resultNote" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

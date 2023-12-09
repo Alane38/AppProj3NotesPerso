@@ -5,4 +5,10 @@
     <string name="bottom_corner_rectangle">bottom_corner_rectangle</string>
     <string name="bts_blanc">BTS Blanc</string>
     <string name="anglais_lva">Anglais LVA</string>
+    <string name="homework">Devoirs</string>
+    <string name="home">Accueil</string>
+    <string name="notes">Notes</string>
+    <string name="dateNote">3 déc. 2023</string>
+    <string name="resultNote">8.50</string>
+    <string name="resultExpectedNote">/20</string>
 </resources>

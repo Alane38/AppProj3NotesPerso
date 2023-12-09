@@ -31,7 +31,8 @@
         android:layout_height="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingClass">
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/app_bar"
@@ -57,63 +58,71 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/toolbarImage"
+                        android:id="@+id/homeToolbarImage"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+                        android:importantForAccessibility="no"
+                        app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+                        tools:ignore="ImageContrastCheck,NestedWeights" />
 
                     <TextView
-                        android:id="@+id/textView11"
+                        android:id="@+id/homeTextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Accueil"
+                        android:text="@string/home"
                         android:textAlignment="center"
                         android:textColor="#676767"
                         android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/homeworkBtn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/toolbarImage"
+                        android:id="@+id/homeworkToolbarImage"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_month" />
+                        android:importantForAccessibility="no"
+                        app:srcCompat="@android:drawable/ic_menu_month"
+                        tools:ignore="NestedWeights,ImageContrastCheck" />
 
                     <TextView
-                        android:id="@+id/textView11"
+                        android:id="@+id/homeworkTextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Devoirs"
+                        android:text="@string/homework"
                         android:textAlignment="center"
                         android:textColor="#676767"
                         android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/notesBtn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/toolbarImage"
+                        android:id="@+id/notesToolbarImage"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/ic_menu_sort_alphabetically" />
+                        app:srcCompat="@android:drawable/ic_menu_sort_alphabetically"
+                        tools:ignore="ImageContrastCheck,ImageContrastCheck,NestedWeights"
+                        android:importantForAccessibility="no" />
 
                     <TextView
-                        android:id="@+id/textView11"
+                        android:id="@+id/notesTextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Notes"
+                        android:text="@string/notes"
                         android:textAlignment="center"
                         android:textColor="#676767"
                         android:textSize="12sp" />
